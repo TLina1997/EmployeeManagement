@@ -15,12 +15,6 @@ export class EmployeeComponent implements OnInit {
   constructor(private service: EmployeeService, private departmentService: DepartmentService, 
     private notificationService: NotificationService, public dialogRef: MatDialogRef<EmployeeComponent>) { }
 
-  // departments = [
-  //   {id: 1, value: 'Department 1'},
-  //   {id: 2, value: 'Department 2'},
-  //   {id: 3, value: 'Department 3'},
-  // ];
-
   ngOnInit() {
 
     this.service.getEmployees();
